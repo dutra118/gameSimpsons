@@ -1,0 +1,106 @@
+#content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 95vh;
+    border: 5px solid grey;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+
+#cont{
+    background-color: #87CEEB; 
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    animation: contador infinite 4s linear;
+}
+h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#pontuacao{
+    color: white;
+    font-family: 'robot';
+    text-align: center;
+}
+#bart{
+    position: absolute;
+    bottom: -8px;
+    height: 150px;  
+    
+}
+
+#skinner{
+    position: absolute;
+    bottom: -3px;
+    width: 130px;
+    height: 100px;
+    animation: skinnerCorrendo infinite 4s linear;
+}
+
+.pular{
+    animation: bartPulando 1s ease-out/*diminui a velocidade da queda*/;
+}
+
+@keyframes skinnerCorrendo{
+    0%{
+        right: -300px;
+    }
+
+    100%{
+        right: 100%;
+    }
+}
+
+@keyframes bartPulando{
+    0%{
+        bottom: -8px;
+    }
+
+    40%{
+        bottom: 130px;
+    }
+    50%{
+        bottom: 130px;
+    }
+
+    60%{
+        bottom: 130px;
+    }
+    100%{
+        bottom: -8px;
+    }
+}
+
+@keyframes contador{
+    0%{
+        right: -300px;
+    }
+
+    100%{
+        right: 100%;
+    }
+}
+
+
+#botao{
+    width: 20%;
+    height: 100px;
+    background-color: #77D44E;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao:hover{
+    background-color: #14F400;
+}
